@@ -3,11 +3,8 @@ name: zodgame
 on:
   schedule:
   - cron: "0 0 * * *"
-  
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  watch:
+    types: started
     
   workflow_dispatch:
 jobs:
